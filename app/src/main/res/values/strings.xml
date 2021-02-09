@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MtApiDemo</string>
+    <string name="zero">0.00</string>
+    <string name="doZero">清零</string>
+    <string name="net">净重</string>
+    <string name="tare">皮重</string>
+    <string name="measureTare">秤量皮重</string>
+    <string name="clearTare">清除皮重</string>
+    <string name="printText">打印文本</string>
+    <string name="cutPaper">切纸</string>
+    <string name="baseInfo">基本信息</string>
+    <string name="status">当前状态</string>
+    <string name="minRange">最小量程=</string>
+    <string name="maxRange">最大量程=</string>
+    <string name="resolution">"e="</string>
+    <string name="unknown">"-"</string>
+    <string name="showStatusBar">显示导航栏</string>
+    <string name="hideStatusBar">隐藏导航栏</string>
+    <string name="openCashBox">打开钱箱</string>
+    <string name="printerFactory">恢复出厂设置</string>
+    <string name="secondScreen">这是第二屏幕</string>
+    <string name="system_control">系统控制</string>
+    <string name="getdensity">读取屏幕密度</string>
+    <string name="setdensity">设置屏幕密度</string>
+    <string name="disablenotification">关闭通知栏通知</string>
+    <string name="enablenotification">开启通知栏通知</string>
+    <string name="disablestatusbarexpand">隐藏下拉通知栏</string>
+    <string name="enablestatusbarexpand">显示下拉通知栏</string>
+    <string name="hidenavigationbar">隐藏导航栏</string>
+    <string name="shownavigationbar">显示导航栏</string>
+    <string name="hidestatusbar">隐藏状态栏</string>
+    <string name="showstatusbar">显示状态栏</string>
+    <string name="readSN">读取串号</string>
+    <string name="fitFont">瘦字体</string>
+    <string name="normalFont">正常字体</string>
+</resources>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/netTextView"
+        android:layout_width="200dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="@string/zero"
+        android:textAlignment="center"
+        android:textColor="@color/background_light"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tareTextView"
+        android:layout_width="200dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="@string/zero"
+        android:textAlignment="center"
+        android:textColor="@color/background_light"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/netTextView"
+        app:layout_constraintStart_toEndOf="@+id/netTextView"
+        app:layout_constraintTop_toTopOf="@+id/netTextView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/net"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/netTextView"
+        app:layout_constraintStart_toStartOf="@+id/netTextView"
+        app:layout_constraintTop_toBottomOf="@+id/netTextView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tare"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tareTextView"
+        app:layout_constraintStart_toStartOf="@+id/tareTextView"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/measureTareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/measureTare"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/netTextView"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/clearTareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/clearTare"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/measureTareButton"
+        app:layout_constraintStart_toStartOf="@+id/tareTextView"
+        app:layout_constraintTop_toTopOf="@+id/measureTareButton" />
+
+    <Button
+        android:id="@+id/printTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/printText"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/measureTareButton"
+        app:layout_constraintTop_toBottomOf="@+id/doZeroButton" />
+
+    <Button
+        android:id="@+id/cutPaperButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cutPaper"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/printTextButton"
+        app:layout_constraintEnd_toEndOf="@+id/clearTareButton"
+        app:layout_constraintStart_toStartOf="@+id/clearTareButton"
+        app:layout_constraintTop_toTopOf="@+id/printTextButton" />
+
+    <Button
+        android:id="@+id/fitFontButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/fitFont"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/printTextButton"
+        app:layout_constraintTop_toBottomOf="@+id/printTextButton" />
+
+
+    <Button
+        android:id="@+id/normalFontButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/normalFont"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/cutPaperButton"
+        app:layout_constraintTop_toBottomOf="@+id/cutPaperButton" />
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/minRange"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/minRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/unknown"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/maxRange"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/minRange"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/maxRange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/unknown"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/resolution"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/maxRange"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/resolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/unknown"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/doZeroButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/doZero"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/measureTareButton"
+        app:layout_constraintStart_toStartOf="@+id/measureTareButton"
+        app:layout_constraintTop_toBottomOf="@+id/measureTareButton" />
+
+    <Button
+        android:id="@+id/openCashBoxButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/openCashBox"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/doZeroButton"
+        app:layout_constraintEnd_toEndOf="@+id/clearTareButton"
+        app:layout_constraintStart_toStartOf="@+id/clearTareButton"
+        app:layout_constraintTop_toTopOf="@+id/doZeroButton" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50572914" />
+
+    <TextView
+        android:id="@+id/idTV_systemControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/system_control"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/getDensity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/getdensity"
+        app:layout_constraintTop_toBottomOf="@+id/idTV_systemControl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline" />
+
+    <Button
+        android:id="@+id/setDensity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/setdensity"
+        app:layout_constraintTop_toBottomOf="@+id/getDensity"
+        app:layout_constraintStart_toStartOf="@+id/getDensity"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/disableNotification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/disablenotification"
+        app:layout_constraintTop_toBottomOf="@+id/setDensity"
+        app:layout_constraintStart_toStartOf="@+id/setDensity"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/enableNotification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/enablenotification"
+        app:layout_constraintTop_toBottomOf="@+id/disableNotification"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/hideNavigationBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hidenavigationbar"
+        app:layout_constraintTop_toBottomOf="@+id/enableNotification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"/>
+
+    <Button
+        android:id="@+id/showNavigationBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/shownavigationbar"
+        app:layout_constraintTop_toBottomOf="@+id/hideNavigationBar"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/hideStatusBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hidestatusbar"
+        app:layout_constraintTop_toBottomOf="@+id/showNavigationBar"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/showStatusBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/showstatusbar"
+        app:layout_constraintTop_toBottomOf="@+id/hideStatusBar"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/idBtnShowSN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/readSN"
+        app:layout_constraintTop_toBottomOf="@+id/showStatusBar"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
